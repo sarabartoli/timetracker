@@ -17,7 +17,7 @@ L'installazione base di [python](https://www.python.org/downloads/)
     *  Scrivi il codice del progetto e la descrizione: `pr1 Questo è il primo progetto`
 3. Rendiconta le ore lavorate
     * Premi `Invio` per rendicontare le ore del mese in corso
-    * Scrivi l'anno e il mese per rendicontare ore su un mese passato (es. `20223`)
+    * Scrivi l'anno e il mese per rendicontare ore su un mese passato (es. `202203`)
     * Inserisci, nell'ordine che vuoi: il codice progetto su cui hai lavorato, ore e minuti, il giorno (di default è oggi) → `pr1 1h 30m 27`
 4. Scegli uno tra `O`, `I`, `S`, `D` per creare report
 5. Scegli `L` per leggere un report creato in precedenza
