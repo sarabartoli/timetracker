@@ -14,7 +14,7 @@ I timesheet e i report sono salvati nella sottocartella file, non rinominarli e 
 E' sconsigliato modificare manualmente il contenuto dei file
 Le funzioni sono nella sottocartella funzioni, non rinominarle e non spostarle
 Se stampando un report su piu' mesi, si vuole anche il report mese per mese (ad eccezione dell'ultimo), modificare la funzione report
-Se la giornata lavorativa non è di 8 ore, modificare le funzioni calcoloOre e stampaReport
+Se la giornata lavorativa non e' di 8 ore, modificare le funzioni calcoloOre e stampaReport
 Se il sabato e' un giorno lavorativo, modificare sabatoLavorativo in home
 I file di report intermedi (report_i_timestamp_YYYYMMDDInizio_YYYYMmDdFine.txt), contengono report per progetto e per data (di un solo mese)
 I file di report finali (report_f_timestamp_YYYYMMDDInizio_YYYYMMDDFine.txt), contengono report per data di più mesi
