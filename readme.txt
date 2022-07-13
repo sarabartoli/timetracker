@@ -5,7 +5,7 @@ Formato inserimento attivita': codProgetto Xh Xm dD (be 2h 30m 27, 2h be, 27 30m
                             di default il giorno e' oggi e ore e minuti sono 0
                             tempi negativi vengono automaticamente trasformati in positivi
                             non inserire spazi tra numeri e h/m
-Per inserire l'orario relativo ad un progetto, è necessario prima censire il progetto
+Per inserire l'orario relativo ad un progetto, e' necessario prima censire il progetto
     Il codice progetto deve iniziare con una lettera, puo' contenere solo lettere e numeri
     Gli input sono case-insensitive e vengono trasformati in lowercase, ma i codici progetto e le descrizioni possono essere stampati con le maiuscole
     Per rendere non modificabile l'elenco dei progetti, modificare il eliminaRiga.py commentando la riga 10 e togliendo il commento dalla riga 9
@@ -16,8 +16,8 @@ Le funzioni sono nella sottocartella funzioni, non rinominarle e non spostarle
 Se stampando un report su piu' mesi, si vuole anche il report mese per mese (ad eccezione dell'ultimo), modificare la funzione report
 Se la giornata lavorativa non e' di 8 ore, modificare le funzioni calcoloOre e stampaReport
 Se il sabato e' un giorno lavorativo, modificare sabatoLavorativo in home
-I file di report intermedi (report_i_timestamp_YYYYMMDDInizio_YYYYMmDdFine.txt), contengono report per progetto e per data (di un solo mese)
-I file di report finali (report_f_timestamp_YYYYMMDDInizio_YYYYMMDDFine.txt), contengono report per data di più mesi
+I file di report intermedi (report_i_timestamp_YYYYMMDDInizio_YYYYMMDDFine.txt), contengono report per progetto e per data (di un solo mese)
+I file di report finali (report_f_timestamp_YYYYMMDDInizio_YYYYMMDDFine.txt), contengono report per data di piu' mesi
 Non viene controllato il numero di ore inserito per ogni giorno, viene stampato un warning a schermo (in fase di creazione del report) se le ore inserite per ogni giorno sono diverse da otto
 Per il calcolo dello scarto delle ore lavorate, non vengono considerati i giorni che non hanno entrate
     se un giorno sono inserite otto ore e un altro zero, non verranno stampati warning
