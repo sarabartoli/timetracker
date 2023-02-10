@@ -8,7 +8,7 @@ Formato inserimento attivita': codProgetto Xh Xm dD (be 2h 30m 27, 2h be, 27 30m
 Per inserire l'orario relativo ad un progetto, e' necessario prima censire il progetto
     Il codice progetto deve iniziare con una lettera, puo' contenere solo lettere e numeri
     Gli input sono case-insensitive e vengono trasformati in lowercase, ma i codici progetto e le descrizioni possono essere stampati con le maiuscole
-    Per rendere non modificabile l'elenco dei progetti, modificare il eliminaRiga.py commentando la riga 10 e togliendo il commento dalla riga 9
+    Per rendere non modificabile l'elenco dei progetti, modificare eliminaRiga.py commentando la riga 10 e togliendo il commento dalla riga 9
 Il nome dei timesheet e' YYYYMM.txt, quando si visualizza un timesheet il nome va inserito senza .txt (202203, 202212)
 I timesheet e i report sono salvati nella sottocartella file, non rinominarli e non spostarli
 E' sconsigliato modificare manualmente il contenuto dei file
@@ -22,7 +22,7 @@ Non viene controllato il numero di ore inserito per ogni giorno, viene stampato 
 Per il calcolo dello scarto delle ore lavorate, non vengono considerati i giorni che non hanno entrate
     se un giorno sono inserite otto ore e un altro zero, non verranno stampati warning
 Il report settimanale considera i giorni dal lunedi' al giorno odierno, anche se sono inserite ore per i giorni futuri
-Quando si aggiunge un'attivita' in un timesheet di un mese passato e' obbligatorio inserire il DD
+Quando si aggiunge un'attivita' in un timesheet di un mese passato e' obbligatorio inserire il dD
 Non e' possibile aggiungere attivita' di mesi futuri,
     a meno di creare manualmente il file YYYYMM.txt nella sottocartella file e modificarlo come se fosse un mese passato
 Funziona per date dal 1 gennaio 2000 al 31 dicembre 2099
