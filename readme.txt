@@ -22,6 +22,7 @@ Non viene controllato il numero di ore inserito per ogni giorno, viene stampato 
 Per il calcolo dello scarto delle ore lavorate, non vengono considerati i giorni che non hanno entrate
     se un giorno sono inserite otto ore e un altro zero, non verranno stampati warning
 Il report settimanale considera i giorni dal lunedi' al giorno odierno, anche se sono inserite ore per i giorni futuri
+Il report mensile considera tutto il mese, dal primo all'ultimo giorno compresi, anche se creato prima della fine del mese                                                          
 Quando si aggiunge un'attivita' in un timesheet di un mese passato e' obbligatorio inserire il dD
 Non e' possibile aggiungere attivita' di mesi futuri,
     a meno di creare manualmente il file YYYYMM.txt nella sottocartella file e modificarlo come se fosse un mese passato
