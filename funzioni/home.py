@@ -2,7 +2,8 @@
 import os
 from pathlib import Path
 from re import search
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
+from calendar import monthrange
 from leggiProgetti import leggiProgetti
 from progetti import progetti
 from report import report
@@ -22,7 +23,8 @@ def home(printFunctions = True):
          P - Visualizza e modifica l'elenco dei progetti
          O - Report orario di oggi
          I - Report orario di ieri
-         S - Report orario della settimana in corso
+         S - Report orario della settimana in corso fino al giorno corrente
+         M - Report orario dal primo all'ultimo giorno del mese corrente
          D - Report orario personalizzato
          E - Elimina riga da un timesheet
          L - Leggi un report già creato
@@ -56,6 +58,11 @@ def home(printFunctions = True):
 
     elif inpt == 's':
         report(fine = datetime.today().date(), file = list())
+        home()
+
+    elif inpt == 'm':
+        oggi = datetime.today().date()
+        report(inizio = date(oggi.year, oggi.month, 1), fine = date(oggi.year, oggi.month, monthrange(oggi.year, oggi.month)[1]), file = list())
         home()
 
     elif inpt == 'd':
@@ -113,4 +120,3 @@ def home(printFunctions = True):
     else:
         printRed('\nLa funzione scelta non esiste\n\n')
         home(printFunctions = False)
-
