@@ -11,7 +11,7 @@ def report(inizio = None, fine = None, file = list(), radice = True):
 
     try:
         if inizio == None:
-            inizio = fine - timedelta(days = fine.weekday())
+            inizio = fine - timedelta(days = fine.weekday()) # primo giorno della settimana corrente
 
         inizio = regexData(inizio)
         fine = regexData(fine)
@@ -31,4 +31,3 @@ def report(inizio = None, fine = None, file = list(), radice = True):
             return
     except:
         return
-
